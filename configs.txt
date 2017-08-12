@@ -1,0 +1,17 @@
+Iniciar o projeto:
+npm init
+
+Pacotes:
+
+- nodemon
+fica autocompilando o app em todo save
+precisa setar "dev": "nodemon index.js" dentro de "scripts" no pakage.json
+para rodar: npm run dev
+
+Separação entre dev e prod:
+
+Necessário possuir duas chaves de de cada API (google, facebook pagar.me etc)
+e também dois bancos de dados.
+
+511770696835-ljvh9r7sl2s9tklf5mulc98m0gek8bt4.apps.googleusercontent.com
+JeoTQkfg9CmgsjXKhc08h9NU
