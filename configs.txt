@@ -12,6 +12,3 @@ Separação entre dev e prod:
 
 Necessário possuir duas chaves de de cada API (google, facebook pagar.me etc)
 e também dois bancos de dados.
-
-511770696835-ljvh9r7sl2s9tklf5mulc98m0gek8bt4.apps.googleusercontent.com
-JeoTQkfg9CmgsjXKhc08h9NU
