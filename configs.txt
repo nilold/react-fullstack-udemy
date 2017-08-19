@@ -1,12 +1,50 @@
+Deploying app:
+
+-build the front-end in order to generate the main.js and main.css files. npm run build
+Options:
+1- build client project -> commit build project -> push to heroku
+2- push to heroku -> tell heroku to install all dependencies for client project -> heroku builds client project
+3- push to CI (3rd party server - continuos integration)-> run tests and stuff -> CI builds and commits client -> CI pushes build to heroku
+
+We are using option 2:
+push to heroku -> heroku installs server deps -> heroku runs script "heroku-postbuild" ->
+we tell heroku to install client deps -> we tell heroku to run "npm run build"
+Just add thei sline to the package.json file on server side:
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+
+
 Iniciar o projeto:
 npm init
 
+tem Alguma coisa de iniciar o express tbm tipo "express init"
+
 Pacotes:
 
+BACK:
 - nodemon
 fica autocompilando o app em todo save
 precisa setar "dev": "nodemon index.js" dentro de "scripts" no pakage.json
 para rodar: npm run dev
+
+
+FRONT:
+- create-react-app !!!!!!!!!!!!MUITO IMPORTANTE!!!!!!!!!!!!!!!
+create-react-app nome do app (client)
+
+Deletou tudo dentro de /client/src, exceto registerServiceWorker
+
+npm install --save redux react-redux react-router-dom
+
+- Materialize CSS
+npm install materialize-css
+import /client/node_components/materialize-css/dist/css/materialize.min.css
+into our index.js
+
+- Axios and Redux Thunk
+npm install --save axios redux-thunk
+
+- Stripe for react (3rd part)
+npm install --save react-stripe-checkout
 
 Separação entre dev e prod:
 
