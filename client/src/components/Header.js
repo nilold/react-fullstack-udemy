@@ -33,12 +33,10 @@ class Header extends Component {
             </li>
           </ul>
         );
-        break;
     }
   }
 
   render() {
-    console.log(this.props);
     return (
       <nav>
         <div className="nav-wrapper">
